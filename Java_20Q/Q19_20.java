@@ -66,6 +66,16 @@ public class Playlist {
     return songs;
   }
 
+  public double totalPrice() {
+    double sum = 0;
+
+    for (int i = 0; i < nextFreeItem; i++) {
+      sum += cds[i].getPrice();
+    }
+
+    return sum;
+  }
+
 }
 
 public class Q19_20 {
