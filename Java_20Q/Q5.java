@@ -7,7 +7,7 @@ public class Q5 {
 
       Scanner in = new Scanner(new FileReader("words.txt"));
 
-      while (in.hasNext()) {
+      while (in.hasNextLine()) {
         String temp = in.nextLine();
         if (temp.contains("A") || temp.contains("b")) {
           System.out.println(temp);
