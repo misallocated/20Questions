@@ -16,7 +16,7 @@ public class Q7 {
         index += 1;
       }
 
-      for (int i = index - 1; i > 0; i--) {
+      for (int i = index - 1; i >= 0; i--) {
         System.out.println(words[i]);
       }
 
