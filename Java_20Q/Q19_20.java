@@ -1,3 +1,4 @@
+//Question 19
 public class CD {
   private String title;
   private String artist;
@@ -39,6 +40,7 @@ public class CD {
 
 }
 
+// Question 20
 public class Playlist {
   private CD[] cds;
   private int nextFreeItem = 0;
