@@ -1,32 +1,31 @@
-public class Q8 {
+import java.util.Scanner;
+import java.io.*;
 
-  public
+public class LLNode {
+  public String payload;
+  public LLNode next;
 
-  String payload;
-  Q8 next;
-
-  Q8(String payload, Q8 next) {
+  LLNode(String payload, LLNode next) {
     this.payload = payload;
     this.next = next;
   }
+}
 
-  public static void main(String[] args) {
-    Q8 base = null;
-    Q8 temp;
+public class Q8E {
+  public static void main() throws IOException {
+    Scanner in = new Scanner(new FileReader("words.txt"));
+    LLNode base = null;
+    LLNode temp;
 
-    temp = new Q8("Test", base);
-    base = temp;
+    while (in.hasNextLine()) {
+      String t = in.nextLine();
+      temp = new LLNode(t, base);
+      base = temp;
+    }
 
-    // Head insert new
-    temp = new Q8("okay", base);
-    base = temp;
-
-    // Insert Another
-    temp = new Q8("poop", base);
-    base = temp;
-
-    Q8 current = base;
+    LLNode current = base;
     boolean flag = true;
+
     while (flag) {
       System.out.println(current.payload);
       current = current.next;
