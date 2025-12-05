@@ -12,9 +12,10 @@ public class Q7 {
 
       String[] words = new String[lines];
 
-      while (in.hasNextLine()) {
-        String temp = in.nextLine();
-        words[index] = temp;
+      Scanner add = new Scanner(new FileReader("words.txt"));
+
+      while (add.hasNextLine()) {
+        words[index] = add.nextLine();
         index += 1;
       }
 
