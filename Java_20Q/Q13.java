@@ -9,7 +9,7 @@ public class Q13 {
       }
     }
 
-    for (int i = 2; i < k; i++)
+    for (int i = 2; i < k; i++){
       if(numbers[i] == 0)
         System.out.println(i);
   }
