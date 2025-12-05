@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.io.*;
 
 public class Q7 {
-  public static void main(String[] args) IOException {
+  public static void main(String[] args) throws IOException {
 
       Scanner in = new Scanner(new FileReader("words.txt"));
       int lines = 0;
